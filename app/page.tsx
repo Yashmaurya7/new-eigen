@@ -27,6 +27,7 @@ import { IncubatedAndTrustedFolds } from "@/components/ui/TrustedBy";
 import { FoldWithVideo } from "@/components/FoldWithVideo";
 
 import { FoundingTeamFold } from "@/components/FoundingTeam";
+import Head from "next/head";
 
 // import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialDemo";
 // import CustomSection from "@/components/CustomSection";
@@ -115,6 +116,35 @@ const timelineData: TimelineEntry[] = [
 export default function Home() {
   return (
     <div> 
+       <Head>
+        <title>Eigengram - Let No Disease Go Untreated</title>
+        <meta
+          name="description"
+          content="Eigengram specializes in precision medicine and drug discovery, tackling diseases like Alzheimer's, Mpox, Pancreatic Cancer, and more using artificial intelligence."
+        />
+        <meta
+          name="keywords"
+          content="Eigengram, Precision Medicine, Drug Discovery, Alzheimer's, Mpox, Pancreatic Cancer, AI Healthcare"
+        />
+        <meta name="author" content="Eigengram Team" />
+        {/* Open Graph Metadata */}
+        <meta property="og:title" content="Eigengram - Let No Disease Go Untreated" />
+        <meta
+          property="og:description"
+          content="Revolutionizing healthcare with precision medicine and AI-driven drug discovery for a healthier future."
+        />
+        <meta property="og:image" content="/path-to-thumbnail.jpg" />
+        <meta property="og:url" content="https://www.eigengram.com" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Eigengram - Let No Disease Go Untreated" />
+        <meta
+          name="twitter:description"
+          content="Discover how Eigengram is leading the charge in precision medicine and drug discovery."
+        />
+
+      </Head>
       <ImageFold/>
           <BackgroundBeamsWithCollisionDemo />
          
